@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Obstacle : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class Obstacle : MonoBehaviour
         {
             playerMovement.Die();
         }
+
+        SceneManager.LoadScene("MainMenuGame");
 
     }
 
